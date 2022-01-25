@@ -1,30 +1,31 @@
+<!DOCTYPE html>
 <html>
   <head>
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="navigation-bar">
+      <button id="" class="header-button">Step 1</button>
+      <button id="" class="header-button">Step 2</button>
+      <button id="" class="header-button">Step 3</button>
+      <button id="" class="header-button">Step 4</button>
+    </div>
     <div class="section">
-      <h1>Sick at Home, Need Help</h1>
-      <h2>Basic Information</h2>
-      <h3>First name</h3>
+      <h1>First name, number & zip code</h1>
       <p>What is your first name?</p>
       <p class="error" id="first-name-error">Please enter your first name</p>
       <p><input type="fname" id="first-name"></input></p>
-      <h3>Number</h3>
       <p>What is your phone number?</p>
       <p class="error" id="number-error">Please enter a 10-digit phone number, including the area code</p>
       <p><input type="text" id="number"></input></p>
-      <h3>Zip Code</h3>
       <p>What is your zip code?</p>
       <p class="error" id="zip-code-error">Please enter a 5-digit zip code</p>
       <p><input type="text" id="zip-code"></input></p>
-      <button id="back">Back</button>
       <button id="next">Next</button>
     </div>
   </body>
   <script src="app.js"></script>
   <script>
     setNavButton("next", "tests.html");
-    setNavButton("back", "index.html");
   </script>
 </html>

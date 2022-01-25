@@ -1,11 +1,17 @@
+<!DOCTYPE html>
 <html>
   <head>
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="navigation-bar">
+      <button id="" class="header-button">Step 1</button>
+      <button id="" class="header-button">Step 2</button>
+      <button id="" class="header-button">Step 3</button>
+      <button id="" class="header-button">Step 4</button>
+    </div>
     <div class="section">
-      <h1>Sick at Home, Need Help</h1>
-      <h3>Schedule Appointment</h3>
+      <h1>Schedule appointment</h1>
       <p>
 	We will need your address to access availablity of service providers near you.
       </p>
@@ -41,6 +47,13 @@
 	<button id="next">Next</button>
       </p>
     </div>
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly"
+      async
+    ></script>
   </body>
   <script src="app.js"></script>
   <script>
@@ -48,5 +61,14 @@
     setNavButton("next", "supply-boxes.html");
     
     document.getElementById("zip-code").value = localStorage.getItem("zip-code");
+
+    let map;
+
+    function initMap() {
+	map = new google.maps.Map(document.getElementById("map"), {
+	    center: { lat: -34.397, lng: 150.644 },
+	    zoom: 8,
+	});
+    }
   </script>
 </html>

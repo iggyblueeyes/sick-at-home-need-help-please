@@ -1,12 +1,12 @@
 body {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 30px;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 100px;
 }
 button {
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 10px 10px;
 }
 button:hover, a:hover {
@@ -16,10 +16,13 @@ button:active {
     transform: translateY(4px);
 }
 input, select {
-    font-size: 16px;
+    font-size: 18px;
     padding: 5px 5px;
     spellcheck="false";
     autocomplete = "off";
+}
+table {
+    font-size: 20px;
 }
 .error {
     color: red;
@@ -57,14 +60,30 @@ input, select {
 .section {
     width: 80%;
     min-width: 400px;
+    max-width: 700px;
     margin: auto;
     position: relative;
 }
 .faq-title {
     text-align: center;
+    column-span: all;
 }
-.faq {
+.faq-section {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
     column-count: 2;
-    column-gap: 40px;
-    column-rule: 1px solid grey;
+    -webkit-column-width: 200px;
+    -moz-column-width: 200px;
+    column-width: 200px;
+    max-width: 1000px;
+    margin: auto;
+}
+.faq-question {
+    word-break: keep-all;
+    display: inline-block;
+    border-radius: 10px;
+    border: solid 2px black;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 8px;
 }
