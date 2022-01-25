@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="section">
+      <h1>Sick at Home, Need Help</h1>
+      <h3>Checkout</h3>
+      <p>Billing information</p>
+      <p>
+	<input type="checkbox" name="same" id="same"><label for="same">Same as address for appointment</label>
+      </p>
+      <input type="fname" id="first-name" placeholder="First name">
+      <input type="lname" id="last-name" placeholder="Last name">
+      <br><br>
+      <input type="street" id="street" placeholder="Street">
+      <input type="city" id="city" placeholder="City">
+      <input type="state" id="state" placeholder="State">
+      <input type="zip" id="zip-code" placeholder="Zip code">
+      <p>...</p>
+      <button id="back">Back</button>
+      <button id="order">Order</button>
+    </div>
+  </body>
+  <script src="app.js"></script>
+  <script>
+    setNavButton("order", "thank-you-for-order.html");
+    setNavButton("back", "cart.html");
+
+    document.getElementById("same").oninput = function() {
+	document.getElementById("state").value = localStorage.getItem("state");
+	document.getElementById("city").value = localStorage.getItem("city");
+	document.getElementById("street").value = localStorage.getItem("street");
+	document.getElementById("zip-code").value = localStorage.getItem("zip-code");
+	document.getElementById("first-name").value = localStorage.getItem("first-name");
+	
+    }
+  </script>
+</html>

@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="section">
+      <h1>Sick at Home, Need Help</h1>
+      <h2>Tests</h2>
+      <h3>Lab-evaluated Tests</h3>
+      <p>
+	Do you need a ride to the nearest Covid testing center?
+	<select>
+	  <option>Yes</option>
+	  <option>No</option>
+	</select>
+      </p>
+      <p>
+	We'll schedule the appointment for you and tell you when you need to be ready for pick up.
+      </p>
+      <p>
+	How many others want to come along to get tested?
+	<select>
+	  <option>0</option>
+	  <option>1</option>
+	  <option>2</option>
+	  <option>3</option>
+	</select>
+      </p>
+      <p>
+	We have space for up to 3 others maximum that ride with you.
+	Everyone that comes must get tested.
+	We recommend only those that have symptoms to come.
+	We don't want to exposed anyone that aren't displaying symptoms.
+      </p>
+      <h3>Rapid Tests</h3>
+      <p>
+	How many rapid tests do you need?
+	<select>
+	  <option>0</option>
+	  <option>1</option>
+	  <option>2</option>
+	  <option>3</option>
+	  <option>4</option>
+	  <option>>4</option>
+	</select>
+      </p>
+      <p>
+	We recommend that everyone you might have exposed get tested one way or another.
+	If they don't have symptoms,
+	we recommend that they find their own way to a Covid testing center or use one of our rapid tests.
+      </p>
+      <button id="back">Back</button>
+      <button id="next">Next</button>
+      <script src="app.js"></script>
+    </div>
+  </body>
+  <script>
+    setNavButton("next", "schedule-appointment.html");
+    setNavButton("back", "basic-information.html");
+  </script>
+</html>

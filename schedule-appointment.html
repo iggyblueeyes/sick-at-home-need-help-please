@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="section">
+      <h1>Sick at Home, Need Help</h1>
+      <h3>Schedule Appointment</h3>
+      <p>
+	We will need your address to access availablity of service providers near you.
+      </p>
+      <input type="street" id="street" placeholder="Street">
+      <input type="city" id="city" value="Tempe" placeholder="City" readonly>
+      <input type="state" id="state" value="AZ" placeholder="state" readonly>
+      <input type="zip" id="zip-code" placeholder="Zip code" readonly>
+      <p>...appointment times go here...</p>
+      <select>
+	<option>Friday, January 25th, 2020</option>
+	<option>Saturday, January 26th, 2020</option>
+      </select>
+      <select>
+	<option>4:00 PM</option>
+	<option>4:15 PM</option>
+	<option>4:30 PM</option>
+	<option>4:45 PM</option>
+	<option>5:00 PM</option>
+        <option>5:15 PM</option>
+        <option>5:30 PM</option>
+        <option>5:45 PM</option>
+	<option>6:00 PM</option>
+        <option>6:15 PM</option>
+        <option>6:30 PM</option>
+        <option>6:45 PM</option>
+	<option>7:00 PM</option>
+        <option>7:15 PM</option>
+        <option>7:30 PM</option>
+        <option>7:45 PM</option>
+      </select>
+      <p>
+	<button id="back">Back</button>
+	<button id="next">Next</button>
+      </p>
+    </div>
+  </body>
+  <script src="app.js"></script>
+  <script>
+    setNavButton("back", "tests.html");
+    setNavButton("next", "supply-boxes.html");
+    
+    document.getElementById("zip-code").value = localStorage.getItem("zip-code");
+  </script>
+</html>
