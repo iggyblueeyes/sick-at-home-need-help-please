@@ -18,7 +18,7 @@ button:hover, a:hover {
     cursor: pointer;
 }
 button:active {
-    transform: translateY(4px);
+    //transform: translateY(4px);
 }
 input, select, textarea {
     font-size: 18px;
@@ -52,19 +52,26 @@ textarea {
 }
 .get-started {
     border-radius: 20px 20px;
-    background-color: lightgrey;
+    background-color: white;
     font-weight: bold;
-    border-bottom: solid black 6px;
-    border-right: solid black 6px;
-    border-top: solid grey 6px;
-    border-left: solid grey 6px;
-    padding: 6px;
+    border: solid 4px black;
+    //border-bottom: solid black 6px;
+    //border-right: solid black 6px;
+    //border-top: solid grey 6px;
+    //border-left: solid grey 6px;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .get-started:active {
-    border-bottom: solid grey 6px;
-    border-right: solid grey 6px;
-    border-top: solid black 6px;
-    border-left: solid black 6px;
+    //border-bottom: solid grey 6px;
+    //border-right: solid grey 6px;
+    //border-top: solid black 6px;
+    //border-left: solid black 6px;
+}
+.get-started:hover {
+    background-color: black;
+    color: white;
 }
 .section {
     width: 90%;
