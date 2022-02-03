@@ -24,3 +24,8 @@ function removeLastKeyIfTooLong(input, maxLength) {
     }
 }
 
+setNavButton("get-started-1", "getting-started.html");
+setNavButton("donate-rapid-tests", "donate-rapid-tests.html");
+setNavButton("careers", "careers.html");
+setNavButton("about-us", "about-us.html");
+setNavButton("home", "index.html");
