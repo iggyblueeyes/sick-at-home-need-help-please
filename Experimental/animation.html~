@@ -1,0 +1,17 @@
+<html>
+  <style>
+    
+  </style>
+  
+  <canvas id="canvas-tempe-map" width="300px" height="300px"></canvas>
+  <script>
+    let canvasTempeMap = document.getElementById("canvas-tempe-map");
+    let ctxTempeMap = canvasTempeMap.getContent("2d");
+    
+    let base_image = new Image();
+    base_image.src = 'tempe.png';
+    context.drawImage(base_image, 100, 100);
+
+    
+  </script>
+</html>

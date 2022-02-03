@@ -11,32 +11,55 @@
       <button id="careers" class="header-button">Careers</button>
       <button id="about-us" class="header-button">About us</button>
     </div>
-    <div class="section">
-      <h1 class="home">Sick at home & need help?</h1>
-      <p>
-	Being sick at home sucks.
-	You haven't seen a human face in days.
-	You might supplies but you're laid up in bed and few people you can call to get them.
-      </p>
-      <p>
-	You need might need to get a Covid test.
-	Whether a PCR or a rapid test, we can help.
-	Everyone you've exposed needs a test.
-      </p>
-      <p>
-	We can bring you supplies and rapid tests.
-	Choose among three Covid Supply Boxes we've carefully put together to help you recover faster.
-      </p>
-      <p>
-	We can schedule an appointment with a local testing center.
-	All the hard work is on our end.
-	We'll find an apointment that will minimize your time away from home.
-      </p>
-      <p>
-	We got you covered! Get started with as little information as first name, number, and zip code.
-      </p>
+    <div class="section" style="text-align: left;">
+      <h1>Sick at home, need help?</h1>
+      <p>You can't get out of bed or don't want to.</p>
+      <p>But you still need important things done.</p>
+      <h3>Need to go to the Covid testing center?</h3>
+      <p>We'll take you.</p>
+      <p>We even schedule the appointment for you.</p>
+      <h3>Need supplies?</h3>
+      <p>We'll bring them to you.</p>
+      <p>Everything you need to recover.</p>
       <button id="get-started-2" class="get-started">Get started</button>
     </div>
+    <hr style="margin-top: 35px; margin-bottom: 35px;">
+    <div class="section" style="text-align: center;">
+      <h2>Now available in Tempe, AZ</h2>
+      <p>Appointments made during the last 30 days.</p>
+      <canvas class="canvas-tempe-map"></canvas>
+      <script src="tempe-activity.js"></script>
+      <p class="source">Map obtained from <a href="https://snazzymaps.com/" target="_blank">www.snazzymaps.com</a></p>
+    </div>
+    <hr style="margin-top: 35px;">
+    <div class="section">
+      <h2>Our Promise</h2>
+      <p>All our services can be delivered on the same or next day you request them.</p>
+      <p>We aim to ensure same-day services.</p>
+    </div>
+    <hr style="margin-top: 35px;">
+    <div class="section">
+      <h2>How it works</h2>
+      <h3>Covid testing center services</h3>
+      <p>You'll give us your credentials & availability preferences.</p>
+      <p>We'll schedule your appointment for you.</p>
+      <p>We find a testing center that minimizes your travel+wait time.</p>
+      <p>We'll send you a confirmation message about your appointment.</p>
+      <p>You'll get a reminder message 30 minutes prior to your appointment.</p>
+      <p>Cancel or reschedule up to 1 hour prior to your appointment.</p>
+      <p>We'll pick you up so you don't have to drive, use public transport or expose friends & family!</p>
+      <p>More than one person need to get tested? Get a group <b>discount</b>!</p>
+      <h3>Supplies delivered to your door</h3>
+      <p>Whether or not you need a ride to the Covid testing center, we will bring you supplies!</p>
+      <p>Anything you need that is not parishable.</p>
+      <p>Tea + honey, gatorade, soups, vitamins, ect.</p>
+      <p>Choose amoung three pre-packaged Covid Supply Boxes.</p>
+      <h3>Get rapid tests for free</h3>
+      <p>As long as suppies last.</p>
+      <p>One per person.</p>
+      <p>We suggest testing all those that have been exposed.</p>
+    </div>
+    <hr style="margin-top: 35px;">
     <div class="faq-section">
       <h2 class="faq-title">Frequently Asked Questions</h2>
       <div class="faq-question">
@@ -97,12 +120,12 @@
   </body>
   <script src="app.js"></script>
   <script>
-    setNavButton("get-started-1", "basic-information.html");
+    setNavButton("get-started-1", "getting-started.html");
     setNavButton("donate-rapid-tests", "donate-rapid-tests.html");
     setNavButton("careers", "careers.html");
     setNavButton("about-us", "about-us.html");
     setNavButton("home", "index.html");
     
-    setNavButton("get-started-2", "basic-information.html");
+    setNavButton("get-started-2", "getting-started.html");
   </script>
 </html>

@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,400&display=swap');
+
 body {
     font-size: 20px;
     margin-top: 30px;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 100px;
+}
+body, button, input, select, table {
+    font-family: 'Montserrat', sans-serif;
 }
 button {
     font-size: 20px;
@@ -45,24 +50,31 @@ table {
     border-radius: 20px 20px;
     background-color: lightgrey;
     font-weight: bold;
-    border-bottom: solid black 4px;
-    border-right: solid black 4px;
-    border-top: solid grey 4px;
-    border-left: solid grey 4px;
-    padding: 4px;
+    border-bottom: solid black 6px;
+    border-right: solid black 6px;
+    border-top: solid grey 6px;
+    border-left: solid grey 6px;
+    padding: 6px;
 }
 .get-started:active {
-    border-bottom: solid grey 4px;
-    border-right: solid grey 4px;
-    border-top: solid black 4px;
-    border-left: solid black 4px;
+    border-bottom: solid grey 6px;
+    border-right: solid grey 6px;
+    border-top: solid black 6px;
+    border-left: solid black 6px;
 }
 .section {
-    width: 80%;
-    min-width: 400px;
-    max-width: 700px;
+    width: 90%;
+    max-width: 800px;
     margin: auto;
     position: relative;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+.left {
+    margin-right: 10%;
+}
+.right {
+    margin-left: 10%;
 }
 .faq-title {
     text-align: center;
@@ -72,11 +84,13 @@ table {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
-    -webkit-column-width: 200px;
-    -moz-column-width: 200px;
-    column-width: 200px;
+    -webkit-column-width: 300px;
+    -moz-column-width: 300px;
+    column-width: 300px;
     max-width: 1000px;
     margin: auto;
+    margin-bottom: 10px;
+    margin-top: 0;
 }
 .faq-question {
     word-break: keep-all;
@@ -86,4 +100,33 @@ table {
     padding-left: 5%;
     padding-right: 5%;
     margin: 8px;
+}
+.image-person {
+    border-radius: 50%;
+    border: solid 1px black;
+    width: 100px;
+}
+hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.canvas-tempe-map {
+    width: 70%;
+    min-width: 350px;
+    height: 126%;
+    //width: 476.18px;
+    //height: 600px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: solid 5px black;
+}
+.source {
+    font-size: 10px;
 }
