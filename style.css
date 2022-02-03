@@ -7,8 +7,8 @@ body {
     margin-right: 10%;
     margin-bottom: 100px;
 }
-body, button, input, select, table {
-    font-family: 'Montserrat', sans-serif;
+body, button, input, select, table, textarea {
+    //font-family: 'Montserrat', sans-serif;
 }
 button {
     font-size: 20px;
@@ -20,14 +20,18 @@ button:hover, a:hover {
 button:active {
     transform: translateY(4px);
 }
-input, select {
+input, select, textarea {
     font-size: 18px;
-    padding: 5px 5px;
+    padding: 10px;
     spellcheck="false";
     autocomplete = "off";
 }
 table {
     font-size: 20px;
+}
+textarea {
+    width: 100%;
+    height: 200px;
 }
 .error {
     color: red;

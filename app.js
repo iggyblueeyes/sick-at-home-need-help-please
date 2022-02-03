@@ -29,3 +29,4 @@ setNavButton("donate-rapid-tests", "donate-rapid-tests.html");
 setNavButton("careers", "careers.html");
 setNavButton("about-us", "about-us.html");
 setNavButton("home", "index.html");
+setNavButton("contact-us", "contact-us.html");
